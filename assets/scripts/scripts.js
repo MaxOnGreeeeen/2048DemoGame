@@ -152,7 +152,7 @@ const spawnRandomBlock  = (isItFirstIteration) =>{
 
             modal.style.display = "block";
             let scoreValueToDisplay = " " + scoreValue + " points";
-            earnedScore.innerText += scoreValueToDisplay;
+            earnedScore.innerText = scoreValueToDisplay;
 
             restartButton.addEventListener("click", (event) =>{
                 event.preventDefault();
