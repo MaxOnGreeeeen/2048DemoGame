@@ -7,4 +7,4 @@ You can use arrows to move blocks (game currently doesn't work on a phone)
 The game is won if you rich 2048 score in one of the blocks
 Have a good game!
 
-[Click](https://maxongreeeeen.github.io/2048DemoGame/)to play
+[Click](https://maxongreeeeen.github.io/2048DemoGame/) to play
