@@ -1,0 +1,297 @@
+/*Подключение локальных шрифтов*/
+@font-face {
+    font-family: 'Comfortaa Bold';
+    src: url(fonts/comfortaa_bold.ttf) ;
+}
+@font-face {
+    font-family: 'VAG World Bold';
+    src: url(fonts/vag-world-bold.ttf) ;
+}
+/*Clearfix*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+  ========================================
+  Пользовательские стили
+  ========================================
+*/
+body{
+    font-family: 'VAG World Bold';
+    background: #faf8ef;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+}
+.modal-shown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    height: 50vh;
+}
+.game-over-text{
+    font-size: 4em;
+    color: #393d3c;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 2px 16px;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    color: white;
+}
+.score-text-display{
+    font-size: 2em;
+    color: #0c2d25;
+}
+.game-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.inf-block{
+    display: flex;
+    justify-content: space-between;
+    min-width: 510px;
+    margin-bottom: 20px;
+}
+.start-btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: auto;
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 10%;
+    background: #295014;
+    color: white;
+    margin-bottom: 10px;
+}
+.restart-btn{
+    background: #77b05a;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+div.start-btn,.div.restart-btn:hover {
+
+}
+.title{
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #f6eef6;
+    background: #74c228;
+    border-radius: 10%;
+    padding-top:1em;
+    font-weight: bolder;
+    padding-bottom: 1em;
+}
+.title-1{
+}
+.score-block{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 4em;
+    width: 100px;
+    background: #bbada0;
+    border-radius: 10%;
+    margin-left: 10px;
+
+}
+.flex-box-for-info{
+    display: flex;
+}
+.score-text{
+    color: #8d5c5c;
+    margin-bottom: 5px;
+}
+.score-value{
+    font-size: 1.2em;
+    color: #b1f8eb;
+}
+.score-best-block{
+    display: inline-flex;
+}
+.main-board{
+    border-radius: 5px;
+    background: #bbada0;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 3px;
+
+}
+.row{
+    display: flex;
+    width: 100%;
+}
+.cell{
+    color: #8d5c5c;
+    border-radius: 5%;
+    margin: 0.2em;
+    height: 3.5em;
+    width: 100%;
+    font-size: 2em;
+    background: #cdc1b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.time-block h2{
+    color: #8d5c5c;
+}.time-score-block{
+     display: flex;
+     flex-direction: column;
+     justify-content: inherit;
+     align-items: flex-end;
+
+ }
+ .clear-styles{
+     font-size: 2.3em;
+ }
+ @keyframes spawn-block {
+     0%{
+         opacity: 0;
+         transform: scale(0.5);
+     }
+     50%{transform: scale(1.05);}
+     100%{
+         transform: scale(1);
+         opacity: 1;
+     }
+ }
+ @keyframes animate-connection {
+     0%{transform: scale(1);}
+     50%{transform: scale(1.2);}
+     100%{transform: scale(1);}
+     
+ }
+ @keyframes change-position {
+     0%{filter: blur(0);}
+     50%{filter: blur(3px);}
+     100%{filter: blur(0);}
+ }
+ @keyframes change-position-left {
+     0%{left: 0}
+     100%{left: 30px}
+ }
+@keyframes change-position-right {
+
+ }
+@keyframes change-position-up {
+
+}
+@keyframes change-position-down {
+
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+@keyframes change-opacity {
+    from {opacity: 1}
+    to {opacity: 0}
+}

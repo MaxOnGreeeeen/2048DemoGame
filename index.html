@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<title>2048</title>
+<head>
+    <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+<body>
+    <div class="game-board">
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class = "game-over-text">Game Over</h1>
+                </div>
+
+                <div class="modal-body">
+                    <h2 class = "score-text-display"id ="earnedScore">You earned </h2>
+                    <div class="start-btn restart-btn" id = "restartButton">
+                        PLAY AGAIN
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="inf-block">
+
+            <div class = "title">
+                <h1 class = "title-1">2048</h1>
+            </div>
+            <div class = buttons-block>
+                <div class ="start-btn" id = "startBtn">
+                    NEW GAME
+                </div>
+                <div class ="start-btn" id = "undo">
+                    UNDO
+                </div>
+            </div>
+
+
+            <div class="time-score-block">
+                <div class = "score-best-block">
+
+                    <div class = "score-block">
+                        <h3 class = "score-text">BEST SCORE</h3>
+                        <h2 class = "score-value" id ="bestScoreValue">0</h2>
+                    </div>
+
+                    <div class = "score-block">
+                        <h3 class = "score-text">SCORE</h3>
+                        <h2 class = "score-value" id ="scoreValue">0</h2>
+                    </div>
+                </div>
+
+                <div class = "time-block">
+                    <h2 id = "time">Time passed:</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div class = "main-board">
+
+            <div class = "row">
+                <div class = "cell" id = "cell00">
+                </div>
+
+                <div class = "cell" id = "cell01">
+                </div>
+
+                <div class = "cell" id = "cell02">
+                </div>
+
+                <div class = "cell" id = "cell03">
+
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "cell" id = "cell10">
+                </div>
+
+                <div class = "cell" id = "cell11">
+                </div>
+
+                <div class = "cell" id = "cell12">
+                </div>
+
+                <div class = "cell" id = "cell13">
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "cell" id = "cell20">
+                </div>
+
+                <div class = "cell" id = "cell21">
+                </div>
+
+                <div class = "cell" id = "cell22">
+                </div>
+
+                <div class = "cell" id = "cell23">
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "cell" id = "cell30">
+                </div>
+
+                <div class = "cell" id = "cell31">
+                </div>
+
+                <div class = "cell" id = "cell32">
+                </div>
+
+                <div class = "cell" id = "cell33">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/scripts.js"></script>
+</body>
+</html>
